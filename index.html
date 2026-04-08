@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 - Bootstrap y Carrusel</title>
+
+    <!-- CDN de Bootstrap (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Ajuste para que las fotos del carrusel tengan un buen tamaño */
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover; /* Recorta la foto para que llene el espacio sin estirarse */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO CON CARRUSEL -->
+    <header>
+        <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="tacos1.jpg" class="d-block w-100" alt="Tacos de pollo">
+                </div>
+                <div class="carousel-item">
+                    <img src="tacos2.jpg" class="d-block w-100" alt="Preparación">
+                </div>
+                <div class="carousel-item">
+                    <img src="tacos3.jpg" class="d-block w-100" alt="Ingredientes">
+                </div>
+            </div>
+            <!-- Botones de desplazamiento -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. CUERPO CON INFORMACIÓN -->
+    <main class="container my-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4">Recetario: Tacos de Pollo al Limón</h1>
+            <p class="lead">Aprendiendo a usar Frameworks para diseño web rápido y responsive.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>¿Por qué esta receta?</h3>
+                <p>Elegimos esta receta porque utiliza ingredientes frescos, evita los ultraprocesados y es ideal para quienes buscan una comida rápida pero nutritiva.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm">
+                    <h5>Dato importante</h5>
+                    <p>El limón no solo da sabor, sino que ayuda a que el pollo se mantenga tierno durante la cocción en la sartén.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p>Información tomada de: <a href="https://www.google.com" class="text-info">Portal de Cocina Saludable</a></p>
+            <p>Contacto: alumno@ucasal.edu.ar</p>
+            <p>&copy; 2026 - TP 2 - Programación Web</p>
+        </div>
+    </footer>
+
+    <!-- CDN de Bootstrap (JavaScript - Necesario para que el carrusel funcione) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

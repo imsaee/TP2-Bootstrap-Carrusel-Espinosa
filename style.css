@@ -1,0 +1,94 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: #2e7d32;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav a {
+    color: #a5d6a7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Títulos con línea decorativa */
+h1, h2 {
+    display: inline-block;
+    border-bottom: 3px solid #81c784;
+    padding-bottom: 5px;
+}
+
+/* Imágenes y Secciones */
+.foto-principal {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 25px;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Tabla */
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabla-datos th {
+    background-color: #e8f5e9;
+    padding: 10px;
+}
+
+.tabla-datos td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Esto controla todas las imágenes dentro de la sección de introducción */
+#introduccion img {
+    /* CLAVE: La imagen nunca será más ancha que su contenedor (el marco blanco) */
+    max-width: 100%;
+    
+    /* Mantiene la proporción de la foto (para que no se vea estirada ni aplastada) */
+    height: auto;
+    
+    /* Bordes redondeados y sombra para que se vea agradable (como lo tenías) */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+    /* Asegura que esté centrada dentro de su propio espacio */
+    display: block;
+    margin: 10px auto;
+}
